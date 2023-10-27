@@ -2,7 +2,7 @@ import { WiDayHail, WiFog, WiDayCloudy, WiCloudy } from "react-icons/wi";
 import { BiCloudLightRain } from "react-icons/bi";
 
 export const fetchData = (city) => {
-  const apiKey = ""; //Your openweathermap API
+  const apiKey = "d7ea390a729956bd79ae06259b26f733"; //Your openweathermap API
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
   const response = fetch(url);
   const data = response;
@@ -12,7 +12,7 @@ export const fetchData = (city) => {
 
 export const foreCast = (arg) => {
   const { lat, lon } = arg;
-  const apiKey = ""; //Your openweathermap API
+  const apiKey = "d7ea390a729956bd79ae06259b26f733"; //Your openweathermap API
   const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`;
   const response = fetch(url);
   const data = response;
